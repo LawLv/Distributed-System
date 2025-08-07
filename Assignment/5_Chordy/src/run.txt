@@ -1,0 +1,25 @@
+c(key).
+c(storage).
+c(node).
+c(test).
+
+P1 = test:start(node).
+P2 = test:start(node,P1).
+P3 = test:start(node,P2).
+P4 = test:start(node,P3).
+P5 = test:start(node,P1).
+
+test:add(500,"hello",P1).
+test:add(500_000_000,"world",P2).
+test:add(300_000_000,"bingo",P2).
+
+test:lookup(500,P4).
+
+P6 = test:start(node,P5, 500_000_001, special).
+test:lookup(500_000_000,P4).
+
+P2 ! probe.
+test:kill(P3).
+P2 ! probe.
+
+节点负责存储的键是从它的前驱节点的 Id 到自己的 Id

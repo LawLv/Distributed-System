@@ -1,0 +1,16 @@
+c(dijkstra).
+c(map).
+c(intf).
+c(hist).
+c(routy).
+c(test).
+test:run().
+
+
+c(dijkstra).
+c(map).
+c(intf).
+c(hist).
+c(routy).
+c(testt).
+testt:run().

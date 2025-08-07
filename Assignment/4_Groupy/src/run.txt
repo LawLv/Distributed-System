@@ -1,0 +1,20 @@
+c(worker).
+c(gui).
+c(test).
+c(test_prolonged).
+c(gms3).
+
+test_prolonged:start_test(gms3, 1000).
+
+
+W1 = test:first(1, gms2, 1000).
+test:add(2, gms2, W1, 1000).
+test:add(3, gms2, W1, 1000).
+test:add(4, gms2, W1, 1000).
+test:more(5, gms2, 1000).
+
+
+
+
+c(gms1).
+c(gms2).
