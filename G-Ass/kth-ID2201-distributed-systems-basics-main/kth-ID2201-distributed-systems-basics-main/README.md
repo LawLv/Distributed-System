@@ -1,1 +1,0 @@
-# kth-ID2201-distributed-systems-basics
